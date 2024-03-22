@@ -1,0 +1,216 @@
+body {
+    background-color: #E0E0E0; /* Slightly darker gray */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    position: relative; /* Add position relative */
+}
+
+.profile-pic img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.header-content {
+    flex: 1;
+    text-align: center;
+}
+
+.header-buttons {
+    position: absolute;
+    top: 137px; /* Adjust top position */
+    left: 20px;
+}
+
+    .header-buttons a {
+        display: inline-block;
+        background-color: black;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-right: 10px;
+    }
+
+h1 {
+    font-size: 36px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.project {
+    margin-bottom: 40px;
+    overflow: hidden; /* Ensure description box fits properly */
+}
+
+    .project h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        text-align: center; /* Centering project title */
+    }
+
+.project-image {
+    text-align: center;
+    background-color: #f3f3f3; /* Set background color */
+    padding: 0px; /* Add padding for better spacing */
+    transition: transform 0.3s; /* Smooth transition effect */
+}
+    .project-image:hover {
+        transform: scale(1.05); /* Enlarge the image slightly on hover */
+        cursor: pointer; /* Change cursor to pointer on hover */
+    }
+    .project-image img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        width: 100%; /* Adjust image width as needed */
+        max-height: 500px; /* Limit maximum height */
+        cursor: pointer; /* Add cursor pointer for indicating clickable */
+    }
+
+.project-details {
+    padding: 20px;
+    background-color: #f3f3f3; /* Set background color */
+    margin-top: 0; /* Remove margin to connect with the graph */
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+    .close:hover,
+    .close:focus {
+        color: #ccc;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+.source-code {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    overflow-x: auto; /* Enable horizontal scroll for code */
+}
+
+    .source-code pre {
+        margin: 0;
+    }
+
+    .source-code code {
+        display: block;
+        white-space: pre-wrap;
+        padding: 10px;
+        font-family: Consolas, Monaco, 'Andale Mono', monospace;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #333;
+        overflow-x: auto; /* Enable horizontal scroll for code */
+    }
+
+.menu {
+    position: fixed;
+    top: calc(50% + 20px); /* Adjust based on your layout */
+    left: 20px; /* Adjust this value as needed */
+    list-style-type: none;
+    padding: 0;
+    background-color: #fff;
+    border-right: 1px solid #ccc;
+    border-radius: 5px; /* Rounded corners for the menu */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    z-index: 1000; /* Ensure menu appears above other content */
+    transition: top 0.3s; /* Smooth transition effect */
+}
+
+    .menu li {
+        padding: 10px;
+        transition: background-color 0.3s; /* Smooth transition effect */
+    }
+
+        .menu li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold; /* Make menu items bold */
+            transition: color 0.3s; /* Smooth transition effect */
+        }
+
+            .menu li a:hover {
+                color: #007bff; /* Change text color on hover */
+                background-color: #f0f0f0; /* Change background color on hover */
+            }
+body {
+    background-color: #E0E0E0; /* Slightly darker gray */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center; /* Center align header text */
+}
+
+.container {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f3f3f3; /* Light gray background */
+    border-top: 5px solid #333; /* Dark gray border */
+}
+
+.about-me-content {
+    text-align: center; /* Center align content */
+}
+
+    .about-me-content img {
+        max-width: 20%;
+        height: 50%;
+        margin-bottom: 20px; /* Add some space below the image */
+    }
