@@ -214,3 +214,16 @@ header {
         height: 50%;
         margin-bottom: 20px; /* Add some space below the image */
     }
+.contact-me {
+    position: fixed;
+    top: 1100px; /* Adjust the top position */
+    right: 15px; /* Adjust the right position */
+    background-color: #f3f3f3; /* Light gray background */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+}
+
+    .contact-me h2 {
+        margin-top: 0;
+    }
