@@ -53,8 +53,12 @@ p {
 .container {
     max-width: 960px;
     margin: 20px auto;
-    padding: 0 20px;
+    padding: 20px;
+    background-color: #f3f3f3; /* Light gray background */
+    border-top: 5px solid #333; /* Dark gray border */
+    position: relative; /* Ensures absolute positioning inside works correctly */
 }
+
 
 .project {
     margin-bottom: 40px;
